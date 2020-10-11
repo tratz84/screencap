@@ -1,0 +1,20 @@
+
+Example of Screen Capture API
+
+index.php contains a <div>-container en calls the functions in desktoprecord.js
+
+desktoprecord.js contains 2 classes,
+- DesktopRecordController
+    - handles initialisation of 'DisplayMedia'
+    - creates a 'DisplayMedia'-stream and shows this in a <video />-container
+
+- StreamUploader
+    - uploads the stream by using MediaRecorder and jquery-ajax
+    - an interval calls every 500ms mediaRecorder.requestData(), this generates
+      the mediaRecorder.ondataavailable-event
+
+
+For testing on a non-https or non-localhost-url? => add the domain and enable:
+    chrome://flags/#unsafely-treat-insecure-origin-as-secure
+
+
