@@ -18,3 +18,6 @@ For testing on a non-https or non-localhost-url? => add the domain and enable:
     chrome://flags/#unsafely-treat-insecure-origin-as-secure
 
 
+License
+Feel free to copy/use this example for any usage. Credits or a link to www.itxplain.nl would be nice.
+
